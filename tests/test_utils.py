@@ -1,5 +1,9 @@
 import unittest
-from src.utils import prepare_photon, measure_photon
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
+
+from utils import prepare_photon, measure_photon  # Import directly from the src directory
 
 class TestUtils(unittest.TestCase):
 

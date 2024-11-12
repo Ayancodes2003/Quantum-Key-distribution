@@ -1,5 +1,11 @@
+import sys
+import os
 import unittest
-from src.bb84 import BB84
+
+# Add the src directory to the Python path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
+
+from bb84 import BB84  # Import BB84 after adding src to the path
 
 class TestBB84(unittest.TestCase):
 

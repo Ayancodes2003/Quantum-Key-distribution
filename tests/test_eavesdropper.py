@@ -1,4 +1,8 @@
 import unittest
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
+
 from src.eavesdropper_simulation import Eavesdropper
 from src.utils import prepare_photon
 
